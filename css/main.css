@@ -1,0 +1,545 @@
+@charset "utf-8";
+
+
+.conBg {
+    background: url(../images/main/mainBanner.png)no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+/*메인슬라이더*/
+.mainSlider {
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+}
+
+#mainVideo {
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.mainTxt {
+    position: absolute;
+    width: 100%; /*중앙정렬*/
+    color: #fff;
+    text-align: center;
+    font-family: 'Godo';
+    top: 50%;
+    margin-top: -190px;
+}
+.mainTxt h3{
+    font-size: 30px;
+}
+.mainTxt h2{
+    font-size: 50px;
+    margin: 20px 0;
+}
+.mainTxt h2 span{
+    color: #fd0000;
+}
+
+.mainIcon {
+    display: inline-block;
+    margin-top: 30px;
+}
+.mainIcon li{
+    float: left;
+    margin: 0 25px; 
+}
+
+.mainIcon li p{
+    margin-top: 20px;
+}
+
+.mainIcon li:hover .icon{
+    background: rgba(255,255,255,1);
+}
+
+.icon {
+    width: 160px;
+    height: 160px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+.icon img{
+    padding-top: 42px;
+}
+
+
+/*mainCon01*/
+
+.mainCon01 {
+    background-image: url(../images/main/mainCon01bg.png);
+}
+
+.con01L {
+    width: 517px;
+    height: 600px;
+    background: url(../images/main/con01Img01.png) no-repeat center center;
+    border-radius: 50px 0;
+    float: left;
+    background-size: 100%;
+    transition: background-size 0.3s;
+}
+.con01L:hover {
+    background-size: 110%;
+}
+.con01L a{
+    display: block;
+    height: 100%;
+}
+
+.con01L h2{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 30px 0 0 30px;
+}
+
+.con01L h2 span{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.con01R {
+    width: 630px;
+    float: right;
+}
+
+.conTit {
+    position: absolute;
+    width: 280px;
+    word-break: keep-all;
+    margin-left: 20px;
+}
+.conTit h2{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sliderBtn {
+    margin-top: 80px;
+}
+
+.sliderBtn li{
+    width: 25px;
+    height: 25px;
+    background: #bbb url(../images/main/arrowL.png)no-repeat center center;
+    text-indent: -9999px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.sliderBtn .nextBtn {
+    background-image: url(../images/main/arrowR.png);
+}
+
+.sliderBtn li a{
+    display: block;
+}
+
+.pdtList li{
+    float: left;
+    margin-left: 30px;
+    border-radius: 30px 0;
+    overflow: hidden;
+    position: relative;  
+}
+
+.pdtList li:first-child {
+    margin-left: 345px;
+    margin-bottom: 30px;
+}
+
+.pdtList li img{
+    display: block;
+    transition: transform 0.5s;
+}
+
+.pdtList li:hover img {
+    transform: scale(1.2);
+}
+
+.pdtList li p{
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;  
+}
+
+
+/*mainCon02*/
+
+.mainCon02 {
+    background-image: url(../images/main/mainCon02bg.png);
+}
+
+.mainCon02 .conTit,.mainCon04 .conTit,.mainCon05 .conTit{
+    position: static; /*기본값*/
+    margin-left: 0;
+    color: #fff;
+    text-align: center;
+    width: auto; /*부모가로값 제거*/
+    margin-bottom: 50px;
+}
+
+.con02List {
+    position: relative;
+}
+
+.con02List li{
+    width: 380px;
+    height: 500px;
+    background: #fff;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    border-radius: 0 40px 0 0;
+    overflow: hidden;
+}
+
+.con02List li:last-child {
+    margin-right: 0;
+}
+
+.con02Img {
+    overflow: hidden;
+}
+.con02List li:hover img {
+    transform: scale(1.2);
+}
+
+.con02List li img{
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+.con02Info {
+    padding: 20px;
+    word-break: keep-all;
+}
+
+.con02Info h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.con02Info p{
+    color: #666;
+}
+
+.moreBtn {
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ee2e24;
+    border-radius: 30px;
+    font-family: 'Godo';
+    background: url(../images/main/plusBtn.png) no-repeat 115px center;
+    text-indent: 15px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.moreBtn a{
+    color: #ee2e24;
+    display: block;
+}
+
+.con02Arrow {
+    width: 44px;
+    height: 83px;
+    background: url(../images/main/arrowLB.png)no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -42px;
+}
+
+.con02Arrow a {
+    display: block;
+    height: 100%;
+}
+
+.con02LArrow {
+    left: -80px;
+}
+
+.con02RArrow {
+    background-image: url(../images/main/arrowRB.png);
+    right: -80px;
+}
+
+
+/*mainCon03*/
+
+.mainCon03 {
+    background-image: url(../images/main/mainCon03bg.png);
+}
+.mainCon03 img {
+    display: block; /*사이공백 제거*/
+}
+.mainCon03 .conTit{
+    margin-left: 0;
+}
+
+.mainCon03 .conTit span{
+    font-family: 'NotoSans',sans-serif;
+}
+
+.youtube {
+    margin-bottom: 20px;
+}
+
+.youtube iframe {
+    display: block;
+    margin: 0 0 0 auto; /*block - 오른쪽정렬*/
+}
+
+.snsList {
+    margin-top: 40px;
+}
+
+.snsList li{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+}
+
+.snsList li a{
+    display: block;
+}
+
+.snsList li img{
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -4px;
+}
+
+.con03List li{
+    float: left;
+    margin-right: 20px;
+}
+
+.con03List li:last-child {
+    margin-right: 0;
+}
+
+
+/*mainCon04*/
+
+.mainCon04 {
+    background-image: url(../images/main/mainCon04bg.png);
+}
+
+.mainCon04 .conTit {
+    color: #333;
+}
+
+.con04List {
+    border-radius: 50px 0;
+    overflow: hidden;
+}
+
+.con04List li{
+    width: 380px;
+    margin-right: 30px;
+    float: left;
+    position: relative;
+}
+
+.con04List li:last-child {
+    margin-right: 0;
+}
+
+.con04List li a>img {
+    display: block;
+}
+
+.con04Tit {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -81px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Godo';
+}
+.con04Tit img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+/*mainCon05*/
+
+.mainCon05 {
+    background-image: url(../images/main/mainCon05bg.png);
+    padding-bottom: 0;
+}
+
+.mainCon05 .conTit {
+    color: #333;
+}
+.con05List li {
+    height: 430px;
+}
+.con05Info {}
+.con05Info dl{
+    margin-bottom: 20px;
+}
+.con05Info dd{
+    display: inline-block;
+}
+.con05Info dt{
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    color: #f36c4d;
+}
+.con05Info dt::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #bbb;
+    margin: 0 10px 0 12px;
+}
+.con05Info h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.con05News {
+    background: #f36c4d;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 150px;
+}
+
+.con05News .inner {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+.con05News a {
+    color: #fff;
+}
+
+.con05News h3 {
+    position: absolute;
+    font-size: 18px;
+}
+
+.News {
+    padding: 0 100px;
+}
+
+.newsArrow {
+    position: absolute;
+}
+
+.newsArrow>div {
+    margin: 8px 0;
+}
+
+.newsArrow>div a {}
+
+.newsArrow>div img {
+    display: block;
+}
+
+.NewsList {
+    padding-left: 30px;
+}
+
+.NewsList li {}
+
+.NewsList li a {
+    display: block;
+    overflow: hidden;
+}
+
+.NewsList li p {
+    float: left;
+}
+
+.NewsList li span{
+    float: right;
+    font-size: 14px;
+}
+
+
+.newsPlus {
+    width: 40px;
+    height: 40px;
+    background:#fff url(../images/main/fPlusBtn.png) no-repeat center center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -99999px;
+    font-size: 0;
+    transition: transform 1s;
+}
+
+.newsPlus:hover {
+    transform: rotate(360deg);
+}
+
+.newsPlus a {
+    display: block;
+    height: 100%;
+}
+
+/*지도추가css*/
+.location {
+    padding: 100px 0;
+}
+.location .conTit {
+    position: static;
+    text-align: center;
+    width: auto;
+    margin-bottom: 50px;
+}
+.map {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.map iframe {
+    position: absolute;
+    top:50%;
+    margin-top: -400px;
+}
+
+
+
+
+
+
+
+
+
+
